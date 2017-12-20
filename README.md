@@ -6,6 +6,7 @@ This program generates fake sensor data in JSON format, and publishes to Apache 
 
 - confluent_kafka
 - faker
+- simplejson
 
 To install confluent_kafka, you need to install `librdkafka-devel` in CentOS.
 
@@ -22,7 +23,7 @@ pip install -r requirements.txt
 ## Usage
 
 ```
-(sensor_producer) [vagrant@localhost sensor_producer]$ python main.py -h
+$ python main.py -h
 usage: main.py [-h] [--kafka-brokers [KAFKA_BROKERS]]
                [--kafka-topic [KAFKA_TOPIC]] [--rate [RATE]]
                [--start-date [START_DATE]] [--num-sensors [NUM_SENSORS]]
